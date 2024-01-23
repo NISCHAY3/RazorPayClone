@@ -17,7 +17,7 @@ module.exports = {
         grayLext: "#818597",
         lightGray: "#e2e2e2",
         grayBlue: "#344a6c",
-        deepBlueHead: "162f56",
+        deepBlueHead: "#162a56",
         gray2: "525a76",
       },
     },
