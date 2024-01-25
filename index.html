@@ -48,10 +48,10 @@
                     <img src="./images/logo.svg" alt="" width="125px" height="30px">
                 </a>
 
-                <ul class="flex gap-6">
+                <ul class="flex gap-6 ">
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Payments</a>
                         <!-- for the underline -->
                         <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block 
@@ -59,7 +59,7 @@
                         </div>
                     </li>
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Banking</a>
                         <!-- for the underline -->
                         <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block 
@@ -68,17 +68,17 @@
                     </li>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Corporate Card</a>
 
                     </li>
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Payroll</a>
                     </li>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Resources</a>
                         <!-- for the underline -->
                         <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block 
@@ -86,7 +86,7 @@
                         </div>
                     </li>
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Support</a>
                         <!-- for the underline -->
                         <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block 
@@ -95,7 +95,7 @@
                     </li>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group ">
+                transition-all duration-200 relative group hidden lg:block ">
                         <a href="#">Pricing</a>
                         <!-- for the underline -->
                         <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block 
@@ -106,14 +106,15 @@
 
                 <div class="flex gap-6 ">
 
-                    <img src="./images/india-flag.svg" alt="" width="28px" height="20px">
+                    <img src="./images/india-flag.svg" alt="" width="28px" height="20px" class="hidden lg:block">
                     <button
                         class="py-3 px-5 font-mullish text-white border-lightBlue border rounded-sm text-sm font-bold ">
                         Log in
                     </button>
 
-                    <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
-                     bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue">
+                    <button
+                        class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
+                     bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue hidden lg:flex">
                         Sign Up
 
                     </button>
@@ -129,7 +130,7 @@
 
         <section class="relative bg-deepBlue">
 
-            <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto ">
+            <div class="w-10/12 max-w-[1080px] flex lg:flex-row flex-col justify-between items-center mx-auto ">
 
                 <!-- left part -->
 
@@ -157,7 +158,7 @@
 
                 <!-- right part -->
 
-                <img src="./images/hero-illustration.jpg" alt="" class=" max-w-[680px]">
+                <img src="./images/hero-illustration.jpg" alt="" class="max-w-[680px]">
             </div>
 
 
@@ -181,7 +182,12 @@
 
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
                 <!-- headinig -->
-                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold ">Accept Payments with
+                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept
+                    Payments with
+                    RazorPay
+                    Payments Suite</h2>
+
+                <h2 class="font-mullish text-center text-5xl leading-[1.2] font-extrabold  md:hidden">Explore
                     RazorPay
                     Payments Suite</h2>
                 <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
@@ -232,21 +238,22 @@
                         </ul>
 
                         <!-- fot button and hyperlink -->
-                        <div class="flex flex-row items-center space-x-4">
-                            <button class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md
-                        font-mullish font-bold hover:border-lightBlue300 transition-all duration-200 ">
+                        <div class="flex md:flex-row items-center space-x-4 flex-col-reverse ">
+                            <button class="bg-lightBlue md:w-fit text-white py-[14px] px-[18px] rounded-md
+                        font-mullish font-bold hover:border-lightBlue300 transition-all duration-200 w-full ">
                                 Sign Up Now
                             </button>
                             <!-- for hyperlink -->
                             <div
-                                class="flex items-center font-bold text-lightBlue300 group-hover:text-grayBlue transition-all duration-200">
+                                class="flex  self-start md:self-center font-bold text-lightBlue300 group-hover:text-grayBlue transition-all duration-200">
                                 <a href="">Know More</a>
                                 <i data-feather="chevron-right"
                                     class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
                             </div>
 
                         </div>
-                        <img src="./images/payment-suite.png" alt="" class="absolute max-w-[600px] right-0 bottom-0 ">
+                        <img src="./images/payment-suite.png" alt=""
+                            class="absolute max-w-[600px] right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block ">
                     </div>
                 </div>
 
@@ -1668,9 +1675,7 @@
             </div>
         </footer>
 
-
     </div>
-    `
 
     <script>
         feather.replace()
